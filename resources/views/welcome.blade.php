@@ -79,7 +79,14 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Be-Nomad 
+                    <br>
+                    @foreach ($tasks as $task)
+                        Nome: {{ $task->nome_prod }}
+                        <br>
+                        {{ $task->descricao }}
+                        <br>
+                    @endforeach    
                 </div>
 
                 <div class="links">

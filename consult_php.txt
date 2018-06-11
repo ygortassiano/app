@@ -1,0 +1,25 @@
+
+Route::get('/', function () {
+    $tasks = [
+        'Task 1',
+        'Task 2'
+
+    ];
+    return view('welcome', compact('tasks'));
+});
+
+Object  
+ @foreach ($tasks as $task)
+       {{ $task->nome_prod }}
+@endforeach 
+
+
+Route::get('tasks/{tasks}', function ($product_id) {
+    //dd($product_id);
+    $tasks =DB::table('prods')->where('product_id',$product_id)->first();
+    //return $tasks;
+    dd($tasks);
+    return view('welcome', compact('tasks'));
+});
+
+
