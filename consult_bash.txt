@@ -1,3 +1,8 @@
 php artisan migrate
 php artisan make:migration create_prods_table --create=prods
 php artisan migrate:refresh
+php artisan make: model Task -m
+
+-- composer dump-autoload 
+   
+php artisan make:model Nome -mc (acho que -r funciona tbm)

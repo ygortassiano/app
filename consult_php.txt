@@ -23,3 +23,20 @@ Route::get('tasks/{tasks}', function ($product_id) {
 });
 
 
+Route::get('user/{id}', 'UserController@show');
+
+FORM 
+@csrf
+
+HTML principal
+@yeld('content')
+
+ou 
+
+@include('layouts.nav') //layouts eh a subpasta
+HTML INCLUDE
+@extends('html_principal')
+@section('content')
+@endsection
+
+from 
